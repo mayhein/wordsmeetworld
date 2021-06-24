@@ -34,6 +34,10 @@ Here is a description of the api endpoints:
 
  `POST /api/uniqueBigramsCount` - takes a string and returns the unique bigrams count in the string. A bigram is defined as any pair of adjacent words. Only unique bigrams are counted. Bigrams are not case-sensitive, e.g. "Beautiful day" and "beautiful day" will be counted as distinct bigrams. Also, bigrams are order-sensitive, e.g. "red dog" and "dog red" will be considered as distinct bigrams.
 
+## Example Postman Demo
+
+<img src="https://user-images.githubusercontent.com/63942502/123276870-93ee7b80-d4d3-11eb-8787-5c3dfcdad0a3.png" /> 
+
 ## Tech Stack
 
 NodeJS / Express / React

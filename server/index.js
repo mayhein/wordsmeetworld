@@ -6,6 +6,8 @@ module.exports = app;
 
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
+app.use(express.json()) // necessary to parse json body in POST requests
+
 // api routes
 app.use('/api', require('./api'));
 

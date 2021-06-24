@@ -29,7 +29,7 @@ router.post("/wordCount", (req, res, next) => {
     try {
       let { text } = req.body;
       let wordCount = countWords(text);
-      res.send(`Word Count: ${wordCount}`);
+      res.send({ count: wordCount });
     } catch (error) {
       next(error);
     }
@@ -44,12 +44,14 @@ router.post("/paragraphCount", (req, res, next) => {
     try {
       let { text } = req.body;
       let paragraphCount = countParagraphs(text);
-      res.send(`Paragraph Count: ${paragraphCount}`);
+      res.send({ count: paragraphCount });
     } catch (error) {
       next(error);
     }
   } else {
-    res.send("Please include text in the body in order to get the paragraph count.");
+    res.send(
+      "Please include text in the body in order to get the paragraph count."
+    );
   }
 });
 
@@ -59,12 +61,14 @@ router.post("/uniqueBigramsCount", (req, res, next) => {
     try {
       let { text } = req.body;
       let uniqueBigramsCount = countUniqueBigrams(text);
-      res.send(`Unique Bigrams Count: ${uniqueBigramsCount}`);
+      res.send({ count: uniqueBigramsCount });
     } catch (error) {
       next(error);
     }
   } else {
-    res.send("Please include text in the body in order to get the unique bigrams count.");
+    res.send(
+      "Please include text in the body in order to get the unique bigrams count."
+    );
   }
 });
 

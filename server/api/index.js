@@ -2,6 +2,7 @@ const router = require("express").Router();
 const {
   countCharacters,
   countWords,
+  countSentences,
   countParagraphs,
   countUniqueBigrams,
 } = require("../utility");
@@ -35,6 +36,21 @@ router.post("/wordCount", (req, res, next) => {
     }
   } else {
     res.send("Please include text in the body in order to get the word count.");
+  }
+});
+
+// Sentence Count
+router.post("/sentenceCount", (req, res, next) => {
+  if (req.body) {
+    try {
+      let { text } = req.body;
+      let sentenceCount = countSentences(text);
+      res.send({ count: sentenceCount });
+    } catch (error) {
+      next(error);
+    }
+  } else {
+    res.send("Please include text in the body in order to get the sentence count.");
   }
 });
 

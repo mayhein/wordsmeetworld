@@ -13,6 +13,11 @@ const getWords = (str) => {
 // Word Count
 const countWords = (str) => getWords(str).length;
 
+// Sentence Count
+const countSentences = (str) => {
+  return str.split(".").filter((substr) => !isBlankString(substr)).length;
+};
+
 // Paragraph Count
 const countParagraphs = (str) => {
   return str.split("\n").filter((substr) => !isBlankString(substr)).length;
@@ -31,6 +36,7 @@ const countUniqueBigrams = (str) => {
 module.exports = {
   countCharacters,
   countWords,
+  countSentences,
   countParagraphs,
   countUniqueBigrams,
 };

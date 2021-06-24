@@ -2,7 +2,7 @@
 
 Website/API endpoint that allows users to check word count, character count, sentence count, paragraph count, and bigrams of any given text.
 
-Deployed Website: http://nommiesbymayh.herokuapp.com/
+Deployed Website: https://wordsmeetworld.herokuapp.com/
 
 ## Description
 

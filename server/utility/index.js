@@ -1,27 +1,16 @@
 // Character Count
-export const characterCount = (text) => {
-  return text;
+const characterCount = (text) => {
+  let count = 0;
+  for (let char in text) {
+    if (text[char] !== ' ') {
+      count++;
+    }
+  }
+  return count;
 }
 
-// Word Count
-export const wordCount = (text) => {
-  return text;
-}
-
-// Sentence Count
-export const sentenceCount = (text) => {
-  return text;
-}
-
-// Paragraph Count
-export const paragraphCount = (text) => {
-  return text;
-}
-
-// Biagram (counts of unique pairs of words)
-export const biagram = (text) => {
-  return text;
-}
-
+module.exports = {
+  characterCount
+};
 
 

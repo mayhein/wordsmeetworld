@@ -28,7 +28,7 @@ Here is a description of the api endpoints:
 
 `POST /api/characterCount` - takes a string and returns the word count in the string. All printable characters, including spaces, tabs and newlines are counted.
 
-`POST /api/sentenceCount` - takes a string and returns the sentence count in the string. A setence is defined as any non-empty collection of words separated by periods.
+`POST /api/sentenceCount` - takes a string and returns the sentence count in the string. A setence is defined as any non-empty collection of words separated by periods, exclamation marks or question marks. 
 
  `POST /api/paragraphCount` - takes a string and returns the paragraph count in the string. A paragraph is defined as any non-empty collection of words separated by newlines.
 

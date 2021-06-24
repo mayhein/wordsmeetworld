@@ -14,9 +14,16 @@ const getWords = (str) => {
 const countWords = (str) => getWords(str).length;
 
 // Sentence Count
+const sentenceRegex = /[^.!?]*[. !?]+/gm;
+
 const countSentences = (str) => {
-  return str.match(/.*?[?!.]/g).length;
-};
+  let sentenceCount = 0;
+  const matchIter = str.matchAll(sentenceRegex)
+  for (const match of matchIter) {
+    sentenceCount++;
+  }
+  return sentenceCount;
+}
 
 // Paragraph Count
 const countParagraphs = (str) => {

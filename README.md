@@ -17,7 +17,7 @@ NodeJS / Express / React
 * Fork and clone this repository.
 * `npm install`
 * `npm start` in the root directory
-* cd into `client` folder and `npm start`
+* `cd client` in another terminal and then `npm start`
 
 Built with ♡ by [May Hein](https://www.linkedin.com/in/mayhein/)
 

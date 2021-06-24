@@ -1,6 +1,6 @@
 # Words Meet World
 
-Website/API endpoint that allows users can check word count, character count, sentence count, paragraph count, and bigrams of any given text.
+Website/API endpoint that allows users to check word count, character count, sentence count, paragraph count, and bigrams of any given text.
 
 Deployed Website: http://nommiesbymayh.herokuapp.com/
 

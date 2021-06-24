@@ -12,7 +12,7 @@ router.post("/characterCount", (req, res, next) => {
     try {
       let { text } = req.body;
       let charCount = countCharacters(text);
-      res.send(`Character Count: ${charCount}`);
+      res.send({ count: charCount });
     } catch (error) {
       next(error);
     }

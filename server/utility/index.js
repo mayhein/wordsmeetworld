@@ -15,7 +15,7 @@ const countWords = (str) => getWords(str).length;
 
 // Sentence Count
 const countSentences = (str) => {
-  return str.split(".").filter((substr) => !isBlankString(substr)).length;
+  return str.match(/.*?[?!.]/g).length;
 };
 
 // Paragraph Count

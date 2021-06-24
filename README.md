@@ -20,13 +20,6 @@ Here is a description of the api endpoints:
 
 NodeJS / Express / React
 
-### How to run app locally
-
-* Fork and clone this repository.
-* `npm install`
-* `npm start` in the root directory
-* `cd client` in another terminal and then `npm start`
-
 Built with ♡ by [May Hein](https://www.linkedin.com/in/mayhein/)
 
 

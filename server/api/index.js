@@ -7,7 +7,7 @@ const {
 } = require("../utility");
 
 // Character Count
-router.get("/characterCount", (req, res, next) => {
+router.post("/characterCount", (req, res, next) => {
   if (req.body) {
     try {
       let { text } = req.body;
@@ -24,7 +24,7 @@ router.get("/characterCount", (req, res, next) => {
 });
 
 // Word Count
-router.get("/wordCount", (req, res, next) => {
+router.post("/wordCount", (req, res, next) => {
   if (req.body) {
     try {
       let { text } = req.body;
@@ -39,7 +39,7 @@ router.get("/wordCount", (req, res, next) => {
 });
 
 // Paragraph Count
-router.get("/paragraphCount", (req, res, next) => {
+router.post("/paragraphCount", (req, res, next) => {
   if (req.body) {
     try {
       let { text } = req.body;
@@ -54,7 +54,7 @@ router.get("/paragraphCount", (req, res, next) => {
 });
 
 // Unique Bigrams Count
-router.get("/uniqueBigramsCount", (req, res, next) => {
+router.post("/uniqueBigramsCount", (req, res, next) => {
   if (req.body) {
     try {
       let { text } = req.body;
